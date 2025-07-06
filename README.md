@@ -1,11 +1,5 @@
 # Product Filtering Condition Editor UI
 
-## Overview
-
-This project implements a dynamic product filtering UI, allowing users to filter a product list by selecting a property (category), an operator, and (when needed) a value. The UI is built with vanilla JavaScript and uses BEM methodology for CSS class naming and modular, maintainable code.
-
----
-
 ## Approach
 
 ### 1. **Data-Driven UI**
@@ -100,3 +94,15 @@ This project implements a dynamic product filtering UI, allowing users to filter
 
 This solution is ready to receive new properties and products.  
 Simply add them to the `properties` or `products` arrays in `datastore.js` and the UI will update automatically—no further code changes are
+
+## Tests
+
+You can run the unit tests using the following command:
+
+```bash
+npm run test
+```  
+
+This will execute the tests defined in `src/composables/useFilter.spec.js`, ensuring that the filtering logic works as expected.
+
+I used the AAA (Arrange, Act, Assert) pattern for the tests to ensure clarity and maintainability, with `jest` as the testing framework.

@@ -275,7 +275,6 @@ describe('useFilter', () => {
       const filter = useFilter(operatorSelect, operatorPlaceholder, operators, propertySelect, properties);
       // ACT
       filter.updateValueInput();
-      console.log('Created Elementxxx:', createdElements);
       createdElements.find(e => e.type === 'text').value = 'headphones, Hammer';
       const result = filter.applyFilter();
       // ASSERT
