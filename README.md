@@ -71,6 +71,9 @@ This project implements a dynamic product filtering UI, allowing users to filter
 - `src/components/productTable.js` — Renders the product table.
 - `src/styles.css` — BEM-based, responsive styling.
 - `src/datastore.js` — Contains the product, property, and operator data.
+- `src/composables/useFilter.js` — Composable for managing filter state and logic. 
+(I would change it to pure functions for better testability and reusability.)
+- `src/composables/useFilter.spec.js` — Unit tests for the filter logic.
 
 ---
 
@@ -82,6 +85,7 @@ This project implements a dynamic product filtering UI, allowing users to filter
   Adding new properties, operators, or product types requires minimal code changes.
 - **Maintainability:**  
   BEM and modular JS make the codebase easy to extend and refactor.
+  Also externalizes the logic to a component-based structure, allowing for easier updates and testing.
 
 ---
 
